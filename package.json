@@ -7,7 +7,7 @@
     "postinstall": "serenity-bdd update",
     "clean": "rimraf target",
     "test": "failsafe clean test:test test:report",
-    "test:test": "cucumber-js --tags='@test'",
+    "test:test": "cucumber-js --tags=\"@test\"",
     "test:report": "serenity-bdd run --features ./features/*",
     "lint": "eslint --ext ts --config .eslintrc.js .",
     "lint:fix": "yarn run lint -- --fix",
